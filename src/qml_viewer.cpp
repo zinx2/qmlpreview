@@ -31,7 +31,7 @@ QmlViewer::QmlViewer(QWidget *parent) :
 	connect(m, SIGNAL(scaleChanged()), this, SLOT(resize()));
 
 	this->setClearColor(QColor(Design::instance()->c().preview));
-	this->setSource(QUrl::fromLocalFile("D:/dev/qt/qmlpreview/desk.qml"));
+	this->setSource(QUrl("./desk.qml"));
 
 }
 

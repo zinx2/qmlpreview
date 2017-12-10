@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	QmlViewer* qViewer = QmlViewer::instance();    
 	qViewer->rootContext()->setContextProperty("scr", &scrInfo);
-	qViewer->rootContext()->setContextProperty("screen", &scrInfo2);
+	qViewer->rootContext()->setContextProperty("di", &scrInfo2);
 
 	Option* option = new Option(qViewer->engine(), qViewer);
 	qmlRegisterType<Option>("option", 1, 0, "Option");
