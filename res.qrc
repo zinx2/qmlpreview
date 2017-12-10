@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/boat.png</file>
+        <file>imgs/btn_add.png</file>
+        <file>imgs/btn_clear.png</file>
+        <file>imgs/btn_fullscreen.png</file>
+        <file>imgs/btn_fullscreen_exit.png</file>
+        <file>imgs/btn_hide_layer.png</file>
+        <file>imgs/btn_refresh.png</file>
+        <file>imgs/btn_remove.png</file>
+        <file>imgs/btn_show_layer.png</file>
+        <file>imgs/btn_zoom_in.png</file>
+        <file>imgs/btn_zoom_out.png</file>
+        <file>imgs/car.png</file>
+        <file>imgs/file.png</file>
+        <file>imgs/file1.png</file>
+        <file>imgs/folder.png</file>
+        <file>imgs/folder1.png</file>
+        <file>imgs/house.png</file>
+        <file>imgs/ic_clear_white_48dp_1x.png</file>
+    </qresource>
+</RCC>
