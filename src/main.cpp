@@ -4,6 +4,7 @@
 #include "screeninfo.h"
 #include "screeninfo2.h"
 #include "Option.h"
+//#include "option2.h"
 #include "model.h"
 #include <QQmlContext>
 int main(int argc, char *argv[])
@@ -18,8 +19,12 @@ int main(int argc, char *argv[])
 	qViewer->rootContext()->setContextProperty("di", &scrInfo2);
 
 	Option* option = new Option(qViewer->engine(), qViewer);
+	option->setDs(true);
+	//Option2 opt2;
 	qmlRegisterType<Option>("option", 1, 0, "Option");
 	qViewer->rootContext()->setContextProperty("opt", option);
+	//qViewer->rootContext()->setContextProperty("ot", &opt2);
+
 
 
 	//qViewer->show();

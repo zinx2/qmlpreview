@@ -42,7 +42,8 @@ SOURCES += \
     src/widget_statusbar.cpp \
     src/widget_viewer.cpp \
     src/Option.cpp \
-    src/screeninfo.cpp
+    src/screeninfo.cpp \
+    src/screeninfo2.cpp
 
 HEADERS += \
     src/binding_listview.h \
@@ -64,7 +65,8 @@ HEADERS += \
     src/widget_viewer.h \
     src/wrapped_widget.h \
     src/Option.h \
-    src/screeninfo.h
+    src/screeninfo.h \
+    src/screeninfo2.h
 
 FORMS += \
      mainwindow.ui \
