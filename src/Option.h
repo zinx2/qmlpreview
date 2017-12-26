@@ -2,7 +2,7 @@
 #include <qqml.h>
 #include <QElapsedTimer>
 
-#include <QQmlEngine>;
+#include <QQmlEngine>
 
 class Option : public QObject
 {
