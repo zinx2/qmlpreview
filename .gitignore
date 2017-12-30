@@ -6,9 +6,9 @@ GeneratedFiles
 qmlpreview.pro.user
 qmlpreview.sln
 qmlpreview.vcxproj
-qmlpreview.vcxproj.filters
 qmlpreview.vcxproj.user
 qmlpreview.VC.db
 qmlpreview.VC.VC.opendb
 release
 Win32
+explorer.db
