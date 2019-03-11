@@ -6,6 +6,7 @@
 #include "Option.h"
 //#include "option2.h"
 #include "model.h"
+#include "enums.h"
 #include <QQmlContext>
 int main(int argc, char *argv[])
 {
@@ -13,10 +14,12 @@ int main(int argc, char *argv[])
 	ScreenInfo scrInfo;
 	DisplayInfo di;
 
+    qmlRegisterType<ENums>("enums", 1, 0, "ENums");
+
 
 	QmlViewer* qViewer = QmlViewer::instance();    
 	qViewer->rootContext()->setContextProperty("scr", &scrInfo);
-	qViewer->rootContext()->setContextProperty("di", &di);
+    qViewer->rootContext()->setContextProperty("di", &di);
 
 	Option* option = new Option(qViewer->engine(), qViewer);
 	option->setDs(true);

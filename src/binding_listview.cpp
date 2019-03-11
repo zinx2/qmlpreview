@@ -148,6 +148,7 @@ void BindingListView::refresh()
 
 	db->selectDB();
 	QList<Explorer*> parents = Model::instance()->projects();
+
 	QStringList strFilters;
 	strFilters += "*.qml";
 
@@ -160,7 +161,8 @@ void BindingListView::refresh()
 		if (!checkDirectory(parent->id(), prefixPath)) continue;
 
 		/* FIND QML FILES. */
-		QStringList children = findFiles(prefixPath);
+        QStringList children = findFiles(prefixPath);
+        children.sort();
 
 		/* CREATE PARENT ITEM. */
 		values.append(new Item(itemID, parentID,
@@ -220,7 +222,7 @@ bool BindingListView::insert()
 		return false;
 
 	/* FIND QML FILES. */
-	QStringList children = findFiles(prefixPath);
+    QStringList children; //= findFiles(prefixPath);
 
 	/* CREATE PARENT ITEM. */
 	Item* parentItem = new Item(itemID, parentID,
@@ -287,7 +289,7 @@ QStringList BindingListView::findFiles(QString path)
 	{
 		iterDir.next();
 		children.push_back(iterDir.fileName());
-	}
+    }
 	return children;
 }
 

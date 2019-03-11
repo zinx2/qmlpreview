@@ -68,7 +68,8 @@ HEADERS += \
     src/Option.h \
     src/screeninfo.h \
     src/screeninfo2.h \
-    src/display_information.h
+    src/display_information.h \
+    src/enums.h
 
 FORMS += \
      mainwindow.ui \
